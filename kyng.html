@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>kyngjosh Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Norican" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Akronim" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 20px 'Akronim', cursive;
+      line-height: 1.8;
+      color: black;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: red;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: black;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+	  background: url(https://cdn.pixabay.com/photo/2017/10/15/22/35/v-for-vendetta-2855606_960_720.jpg);
+      background-color: red;
+      color: red;
+      padding: 100px 25px;
+      font-family: 'Norican', cursive;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: red;
+  }
+  .logo-small {
+      color: purple;
+      font-size: 50px;
+  }
+  .logo {
+      color: red;
+      font-size: 300px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: red;
+  }
+  .carousel-indicators li {
+      border-color: purple;
+  }
+  .carousel-indicators li.active {
+      background-color: red;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f4511e; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: purple;
+  }
+  .panel-heading {
+      color: white !important;
+      background-color: red !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: red !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: red;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: red;
+      color: yellow;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: red;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: 'Norican', cursive;
+  }
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: orange !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: yellow !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: purple !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: green;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  .col-sm-4 img {
+	  height: 250px;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Vendetta</h1> 
+  <p>We specialize in having fun</p> 
+  <form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Company Page</h2><br>
+      <h4>You will have the best time of your life no matter what the circumstances, it will be the best time of your life. Just contact us and get started</h4><br>
+      <p>Our company specialises in having fun, so if your life has been boring all along, you should come to our comple and enjoy your life before it is over. Don't wait c'mon start having fun and visit us.</p>
+      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+    </div>
+    <div class="col-sm-4">
+	
+      <img src="https://www.metal-archives.com/images/1/0/5/3/105354_logo.jpg">
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="http://s2.hulkshare.com/song_images/original/7/e/6/7e62a24c151cc71818ec69843815bb9a.jpg?dd=1441787041" width="300px">
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> Our mission is to be able to transport people to the most expensive cites, islands and other places. This will also let us reach our endgoal which is to have all the money in the world. #detta</h4><br>
+	  
+      <p><strong>VISION:</strong> Our vision is in a short term state now which is to keep on getting profit from our clients and keep on building our company until we are able to become a billion dollar company, which is importnat in this society.#detta</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="logo-small"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNmE0M2ZkM2QtYWNiNS00NWI0LTliMTEtNDA4ZGE0MmRjOTk1XkEyXkFqcGdeQXVyNjQzMDEyNDE@._V1_UY268_CR43,0,182,268_AL_.jpg" width="250px"></span>   
+      <h4>Loyalty</h4>
+      <p>We always give our best customers the best care..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="logo-small"><img src="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAACvAAAAJDY5MjhiYjRjLThmNGEtNDIwNi1hN2U5LWVmNDBhYjYwMWY5MQ.png" width="250px"></span>
+      <h4>Hardwork</h4>
+      <p>WE always get the job done no matter what..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="logo-small"><img src="https://us.quanta.com/wp-content/uploads/2017/03/safetyman.jpg" width="250px"></span>
+      <h4>Safety</h4>
+      <p>You will always feel safe..</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+     <span class="logo-small"><img src="http://photos1.blogger.com/x/blogger/4659/4014/1600/622126/holiday1.jpg" width="250px"></span>
+      <h4>Great trip</h4>
+      <p>We will always carry you to the best attractions..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="logo-small"><img src="https://www.gannett-cdn.com/-mm-/fa16621c00a85965931641efe2e9bc37933bac21/c=219-0-3645-2576&r=x404&c=534x401/local/-/media/2016/10/13/Pensacola/Pensacola/636119546495857762-ThinkstockPhotos-495329828.jpg" width="250px"></span>
+      <h4>Good food</h4>
+      <p>You will recieve the best food in the country</p>
+    </div>
+    <div class="col-sm-4">
+       <span class="logo-small"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOSnOSPnL4U4dQGCAAKeVRpTeZYpLef0Y27Ze0Z2oH5rkCdnqa" width="250px"></span>
+      <h4 style="color:#303030;"> Good Music</h4>
+      <p>Only the best type of music will be given to ears</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>Countries</h2><br>
+  <h4>Places that we go to</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://cdn1.things-to-do-in-jamaica.com/wp-content/uploads/2016/02/blue-lagoon-4.jpg" alt="jamaica" width="300" height="1000">
+        <p><strong>Jamaica</strong></p>
+        <p>magnificent Jamaica</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="https://www.ncl.com/sites/default/files/DestinationGalleries.Hawaii.SnorkelingBay900x400.jpg" alt="Hawaii" width="300" height="1000">
+        <p><strong>Hawaii</strong></p>
+        <p>beautiful Hawaii</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://www.splendourhomes.ae/wp-content/uploads/2017/02/Dubai-Yellow-Pages-Online-Directory-Dubai-UAE.jpg" alt="Dubai" width="300" height="1000">
+        <p><strong>Dubai</strong></p>
+        <p>Rich Dubai</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>This is what our customers are saying</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Don't be cheap!! choose the one that cost the most</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>2000</strong> Lorem</p>
+          <p><strong>1500</strong> Ipsum</p>
+          <p><strong>500</strong> Dolor</p>
+          <p><strong>200</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$20</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>1000</strong> Lorem</p>
+          <p><strong>5000</strong> Ipsum</p>
+          <p><strong>10000</strong> Dolor</p>
+          <p><strong>500</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$50</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>10000</strong> Lorem</p>
+          <p><strong>50000</strong> Ipsum</p>
+          <p><strong>25000</strong> Dolor</p>
+          <p><strong>1000</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$500</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<!-- Container (TOUR Section) -->
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">TOUR DATES</h3>
+    <p class="text-center">Lorem ipsum we'll play you some music.<br> Remember to book your tickets!</p>
+    <ul class="list-group">
+      <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
+      <li class="list-group-item">October <span class="label label-danger">Sold Out!</span></li> 
+      <li class="list-group-item">November <span class="badge">3</span></li> 
+    </ul>
+    
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <span class="logo-small"><img src="https://www.telegraph.co.uk/content/dam/Travel/hotels/europe/france/paris/eiffel-tower-paris-p.jpg?imwidth=480" width="250px"></span>
+          <p><strong>Paris</strong></p>
+          <p>Friday 27 November 2015</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+        <span class="logo-small"><img src="https://i.ytimg.com/vi/dzjQ-akB3BI/maxresdefault.jpg" width="250px"></span>
+          <p><strong>New York</strong></p>
+          <p>Saturday 28 November 2015</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <span class="logo-small"><img src="https://i.ytimg.com/vi/oi2o2r3Sgc0/maxresdefault.jpg" width="250px"></span>
+          <p><strong>San Francisco</strong></p>
+          <p>Sunday 29 November 2015</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(40.730610, -73.935242);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqq81g0dlxsAI2LWWJO0nq8gg3ZrePjnU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
+
